@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ride Outlook</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Ride Outlook Section: %1$d</string>
+    <string name="section_one_title">Conditions</string>
+    <string name="section_two_title">Ride Outlook</string>
+    <string name="section_three_title">Daily Outlook</string>
+    <string name="snackbar_text">Ride Outlook Audio Output</string>
+    <string name="snackbar_action_undo">MUTE</string>
+    <string name="current_weather">Getting Current Conditions...</string>
+    <string name="url_link">More Weather Info...</string>
+    <string name="weather_underground">Weather provided by WeatherUnderground.com</string>
+    <string name="rate_app">Would you like to rate Ride Outlook and possibly provide feedback?\n\nBy giving constructive feedback you help create the best possible experience for all users.</string>
+</resources>
