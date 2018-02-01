@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+
+    <color name="brand_main">#2984BF</color>
+    <color name="text">#333333</color>
+    <color name="text_de_emphasized">#666666</color>
+    <color name="text_faint">#999999</color>
+</resources>
