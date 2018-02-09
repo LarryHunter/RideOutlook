@@ -2,6 +2,7 @@
 <manifest package="com.hunterdev.rideoutlook2"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_ride_outlook_round"
