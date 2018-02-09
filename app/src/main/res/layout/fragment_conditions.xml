@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,12 +13,12 @@
 
         <ImageView
             android:id="@+id/icon_image"
-            android:layout_marginTop="60dp"
             android:layout_width="150dp"
             android:layout_height="150dp"
-
             android:layout_alignParentTop="true"
+
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
             android:contentDescription="@+id/conditions_icon"
             android:src="@mipmap/ic_ride_outlook" />
 
@@ -27,25 +26,25 @@
             android:id="@+id/current_conditions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/url_link"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/weatherunderground_url_link"
             android:layout_marginTop="15dp"
             android:gravity="top|center"
             android:text="@string/current_weather"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
-            android:id="@+id/url_link"
+            android:id="@+id/weatherunderground_url_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/icon_image"
             android:layout_marginTop="20dp"
             android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
-            android:onClick="openWeatherUnderground"
             android:text="@string/url_link"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@color/blue"
@@ -58,8 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/current_conditions"
             android:layout_centerHorizontal="true"
-            android:visibility="visible"/>
-
+            android:visibility="visible" />
     </RelativeLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -70,14 +68,13 @@
         android:layout_marginBottom="48dp"
         android:layout_marginEnd="32dp"
         android:src="@drawable/ic_volume_up_white_24dp"
-        app:elevation="8dp"/>
+        app:elevation="8dp" />
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/snackbarPosition"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
-    </android.support.design.widget.CoordinatorLayout>
+        android:layout_centerHorizontal="true" />
 
 </android.support.design.widget.CoordinatorLayout>
