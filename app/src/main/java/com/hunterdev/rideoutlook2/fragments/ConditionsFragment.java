@@ -36,7 +36,7 @@ import static android.content.Context.LOCATION_SERVICE;
 public class ConditionsFragment extends Fragment implements LocationListener, TextToSpeech.OnInitListener
 {
 
-    public static ConditionsFragment newInstance()
+	public static ConditionsFragment newInstance()
 	{
 		return new ConditionsFragment();
 	}
@@ -49,7 +49,7 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 	private TextToSpeech m_textToSpeech;
 	private FloatingActionButton m_speakConditionsFAB;
 
-    private final String API_REFERENCE_CODE = "e2b6eaf41ee74858";
+	private final String API_REFERENCE_CODE = "e2b6eaf41ee74858";
 	private final String UNIT_OF_MEASUREMENT = "unit_of_measurement";
 	private final String APP_RATED = "app_rated";
 	private final String USE_COUNT_FOR_RATING = "use_count";
@@ -58,7 +58,7 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 
 	private final String weatherConditionsUrl = "http://api.wunderground.com/api/" + API_REFERENCE_CODE + "/conditions/q/";
 	private final String weatherIconUrl = "http://icons.wxug.com/i/c/c/";
-    private final String wundergroundReferralUrl = "http://www.wunderground.com/?apiref=4e313604ca87365f";
+	private final String wundergroundReferralUrl = "http://www.wunderground.com/?apiref=4e313604ca87365f";
 
 	private String unitOfMeasurement = "";
 	private Boolean didUserRateApp = false;
@@ -107,7 +107,7 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 			private void goToWeatherUndergroundWebsite()
 			{
 				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(wundergroundReferralUrl));
-                startActivity(browserIntent);
+				startActivity(browserIntent);
 			}
 		});
 
@@ -130,7 +130,10 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 		didUserRateApp = prefs.getBoolean(APP_RATED, false);
 
 		// Count number of times user launched the app ??? For rating app.
-		if (!didUserRateApp) { ratingUseCount = prefs.getInt(USE_COUNT_FOR_RATING, 0); }
+		if (!didUserRateApp)
+		{
+			ratingUseCount = prefs.getInt(USE_COUNT_FOR_RATING, 0);
+		}
 	}
 
 	private void promptUserToRateApp()
@@ -158,21 +161,25 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 	private void getLocation()
 	{
 		m_conditionsProgressBar.setVisibility(View.VISIBLE);
-        if (isNetworkAvailable())
-        { readCurrentWeather(); }
+		if (isNetworkAvailable())
+		{
+			readCurrentWeather();
+		}
 	}
 
-    private boolean isNetworkAvailable()
-    {
-        ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivityManager == null)
-        { return false; }
+	private boolean isNetworkAvailable()
+	{
+		ConnectivityManager connectivityManager = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+		if (connectivityManager == null)
+		{
+			return false;
+		}
 
-        NetworkInfo netInfo = connectivityManager.getActiveNetworkInfo();
-        return netInfo != null && netInfo.isConnectedOrConnecting();
-    }
+		NetworkInfo netInfo = connectivityManager.getActiveNetworkInfo();
+		return netInfo != null && netInfo.isConnectedOrConnecting();
+	}
 
-    private void initialize()
+	private void initialize()
 	{
 		m_locManager = (LocationManager) getActivity().getSystemService(LOCATION_SERVICE);
 		m_textToSpeech = new TextToSpeech(getActivity(), this);
@@ -275,8 +282,8 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 
 	private void goToPlayStoreToRateApp()
 	{
-        final String appStoreUrl = "https://play.google.com/store/apps/details?id=com.hunterdev.rideoutlook2";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(appStoreUrl));
+		final String appStoreUrl = "https://play.google.com/store/apps/details?id=com.hunterdev.rideoutlook2";
+		Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(appStoreUrl));
 		startActivity(intent);
 	}
 }
