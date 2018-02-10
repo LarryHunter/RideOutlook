@@ -28,8 +28,6 @@ import android.widget.Toast;
 import com.hunterdev.rideoutlook2.R;
 import com.hunterdev.rideoutlook2.logic.Deserializer;
 
-import org.w3c.dom.Text;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -108,7 +106,7 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 
 			private void goToWeatherUndergroundWebsite()
 			{
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(wundergroundReferralUrl));
+				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(wundergroundReferralUrl));
                 startActivity(browserIntent);
 			}
 		});
@@ -236,7 +234,7 @@ public class ConditionsFragment extends Fragment implements LocationListener, Te
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle("Please Rate Ride Outlook")
 			.setMessage(getString(R.string.rate_app))
-			.setIcon(R.mipmap.ic_ride_outlook);
+			.setIcon(R.drawable.ic_ride_outlook);
 
 		builder.setNegativeButton("NO", new DialogInterface.OnClickListener()
 		{

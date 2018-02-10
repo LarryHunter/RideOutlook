@@ -6,7 +6,6 @@
     android:gravity="center"
     android:orientation="vertical">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,7 +19,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
             android:contentDescription="@+id/conditions_icon"
-            android:src="@mipmap/ic_ride_outlook" />
+            android:src="@drawable/ic_ride_outlook" />
 
         <TextView
             android:id="@+id/current_conditions"

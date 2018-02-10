@@ -38,6 +38,7 @@ captures/
 # Keystore files
 *.jks
 
+.idea
 .idea/libraries/
 .idea/dictionaries/
 .idea/workspace.xml
