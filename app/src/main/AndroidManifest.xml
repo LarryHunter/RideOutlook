@@ -2,25 +2,38 @@
 <manifest package="com.hunterdev.rideoutlook2"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_ride_outlook"
-        android:roundIcon="@mipmap/ic_ride_outlook_round"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_ride_outlook_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hunterdev.rideoutlook2.activities.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.PermissionsActivity"
+            android:label="@string/title_activity_permissions"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

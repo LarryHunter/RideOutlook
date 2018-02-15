@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Ride Outlook</string>
     <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="about_dialog_text">This app retrieves the current weather and displays it in either Fahrenheit or Celsius.\n\nIn addition, it will read out the weather conditions it gets while displaying various riding images.\n\nCopyright © 2018 Hunter Dev</string>
     <string name="section_format">Ride Outlook Section: %1$d</string>
     <string name="section_one_title">Conditions</string>
     <string name="section_two_title">Ride Outlook</string>
@@ -11,4 +13,82 @@
     <string name="url_link">More Weather Info...</string>
     <string name="weather_underground">Weather provided by WeatherUnderground.com</string>
     <string name="rate_app">Would you like to rate Ride Outlook and possibly provide feedback?\n\nBy giving constructive feedback you help create the best possible experience for all users.</string>
+    <string name="network_error_title">Network Error</string>
+    <string name="network_error_text">Failed to find an available network.\n\nPlease be sure you are connected to the internet on a valid data plan or on Wi-Fi.</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_permissions">PermissionsActivity</string>
+    <string name="permissions_explanation_text">Location permissions are required for the app to get the local weather conditions.</string>
+    <string name="permissions_explanation_title">Permission Required</string>
+    <string name="button_ok_text">OK</string>
 </resources>
