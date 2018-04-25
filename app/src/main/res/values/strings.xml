@@ -9,8 +9,8 @@
     <string name="section_three_title">Daily Outlook</string>
     <string name="snackbar_text">Ride Outlook Audio Output</string>
     <string name="snackbar_action_undo">MUTE</string>
-    <string name="current_weather">Getting Current Conditions...</string>
-    <string name="url_link">More Weather Info...</string>
+    <string name="current_weather">Getting Current Conditions…</string>
+    <string name="url_link">More Weather Info…</string>
     <string name="weather_underground">Weather provided by WeatherUnderground.com</string>
     <string name="rate_app">Would you like to rate Ride Outlook and possibly provide feedback?\n\nBy giving constructive feedback you help create the best possible experience for all users.</string>
     <string name="network_error_title">Network Error</string>

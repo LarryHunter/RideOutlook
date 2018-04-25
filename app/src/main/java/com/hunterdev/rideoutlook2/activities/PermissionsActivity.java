@@ -1,6 +1,7 @@
 package com.hunterdev.rideoutlook2.activities;
 
 import android.Manifest;
+import android.Manifest.permission;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import com.hunterdev.rideoutlook2.R;
 
 public class PermissionsActivity extends AppCompatActivity
 {
-	Button m_okButton;
+	private Button m_okButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -36,9 +37,9 @@ public class PermissionsActivity extends AppCompatActivity
 			@Override
 			public void onClick(View view)
 			{
-				// No explanation needed, we can request the permission.
+				// Request location lookup permission
 				ActivityCompat.requestPermissions(PermissionsActivity.this,
-					new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+					new String[]{permission.ACCESS_FINE_LOCATION},
 					MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
 			}
 		});
